@@ -44,6 +44,4 @@ foreach ($cluster in $clusters) {
     $tbl.Rows.Add($row)
 }
 
-$tbl = $tbl | fl
-
-echo $tbl
+$tbl | Format-Table
